@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="HTML,Example,Tailwind">
+    <meta name="description" content="Sweet Shop website example build using Tailwind CSS">
+    <title>Vishwas Sweets</title>
+    <link rel="stylesheet" href="/dist/output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicon_io/site.webmanifest">
+</head>
+<body class="bg-gradient-to-r from-violet-900 to-slate-700">
+
+    <!-- Navigation bar start-->
+    <nav class="nav bg-gradient-to-r from-violet-900 to-slate-700 align-middle py-2 md:px-16 px-10 sm:block md:flex sticky w-100 left-0 top-0 z-10">
+        <div class="text-green-400 flex md:block justify-between">
+            <h1 class="md:text-4xl text-3xl font-bold italic"><a href="#">Vishwas Sweets</a> </h1>
+            <button class="md:hidden visible text-white text-3xl hover:scale-110 hover:text-emerald-400" id="show-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+            </button>
+        </div>
+        <div class="md:ms-auto flex md:h-auto h-0 overflow-hidden align-middle justify-center mt-6 md:mt-0 md:bg-inherit bg-violet-800 border-0 rounded-xl transition-all duration-200 ease-in-out" id="show-list">
+            <ul class="md:flex md:my-auto align-middle font-poppins" >
+                <li class="my-4 md:my-0" >
+                    <a class="text-cyan-400 font-medium mx-3 md:my-auto hover:text-cyan-300 transition duration-100" href="#">Sweets</a>
+                </li>
+                <li class="my-4 md:my-0" >
+                    <a class="text-cyan-400 font-medium mx-3 md:my-auto hover:text-cyan-300 transition duration-100" href="#">Dry Fruits</a>
+                </li>
+                <li class="my-4 md:my-0" >
+                    <a class="text-cyan-400 font-medium mx-3 md:my-auto hover:text-cyan-300 transition duration-100" href="#">Namkeens</a>
+                </li>
+                <li class="my-4 md:my-0" >
+                    <a class="text-cyan-400 font-medium mx-3 md:my-auto hover:text-cyan-300 transition duration-100" href="#">Gift Packs</a>
+                </li>
+            </ul>
+        </div>  
+    </nav>
+
+    <!-- Navigation bar end -->
+    <!-- Cover section start -->
+
+    <div class="cover flex flex-col-reverse md:flex md:flex-row md:px-16 px-8 py-8 justify-between align-bottom">
+        <div class="intro flex flex-col my-auto">
+            <h1 class="md:text-7xl text-5xl md:mb-6 mb-3 text-teal-500 font-playball" >
+                Guess How 
+                <span class="text-red-400">
+                Tasty
+                </span>
+                It Is ?
+            </h1>
+            <p class="md:text-xl text-base text-white italic md:p-4 p-2 rounded bg-violet-900">
+                Treat yourself to something sweet today! 
+                <br> Our online sweet shop has something for everyone,
+                <br> whether you prefer fruity, chocolatey, or nutty flavors.
+            </p>
+        </div>
+        <div class="md:float-right">
+            <img src="/src/assets/cover-removebg-preview.png">
+            <p class="md:text-4xl text-2xl mb-4 text-teal-200 text-center font-playball" >"you are what you eat , so eat sweet "</p>
+        </div>
+    </div>
+
+    <!-- Cover section End -->
+    <!-- Product section start -->
+
+    <section class="md:px-16 p-10 bg-cover bg-center bg-black bg-opacity-25" >
+        <div class="pb-6 text-center text-white md:text-4xl text-lg border-b-2">
+            <h1>Choose the Delight that Suite you Mood</h1>
+        </div>
+        <div class="my-8 grid grid-cols-3 md:grid-cols-3 md:gap-10 gap-2 align-middle justify-between">
+            <div class="relative rounded-2xl border col-span-2 ">
+            <img src="/src/assets/shania-pinnata-n8psEOtD4Ro-unsplash.jpg" alt="" class="rounded-xl border-2 w-full" aria-describedby="First-image">
+            <div class="hover:opacity-100 absolute top-0 bottom-0 left-0 right-0 h-full w-full opacity-0 transition-all ease-linear duration-200 rounded-2xl border">
+                <div class="text-black font-poppins font-medium text-lg md:text-xl flex justify-center items-center bg-cyan-300 bg-opacity-50 absolute rounded-xl h-full w-full">Chocolates</div>
+            </div>
+            </div>
+            <div class="relative rounded-2xl border">
+            <img src="/src/assets/juice.jpg" alt="" class="rounded-xl border-2 w-full h-full" aria-describedby="Second-image">
+            <div class="hover:opacity-100 absolute top-0 bottom-0 left-0 right-0 h-full w-full opacity-0 transition-all ease-linear duration-200 rounded-2xl border">
+                <div class="text-black font-poppins font-medium text-lg md:text-xl flex justify-center items-center bg-cyan-300 bg-opacity-50 absolute rounded-xl h-full w-full">Jucie Delight</div>
+            </div>
+            </div>
+            <div class="relative rounded-2xl border">
+            <img src="/src/assets/namkeen.jpg" alt="" class="rounded-xl border-2 w-full h-full" aria-describedby="Third-image">
+            <div class="hover:opacity-100 absolute top-0 bottom-0 left-0 right-0 h-full w-full opacity-0 transition-all ease-linear duration-200 rounded-2xl border">
+                <div class="text-black font-poppins font-medium text-lg md:text-xl flex justify-center items-center bg-cyan-300 bg-opacity-50 absolute rounded-xl h-full w-full">Namkeens</div>
+            </div>
+            </div>
+            <div class="relative rounded-2xl border col-span-2">
+            <img src="/src/assets/gift-.jpg" alt="" class="rounded-xl border-2 w-full" aria-describedby="Forth-image">
+            <div class="hover:opacity-100 absolute top-0 bottom-0 left-0 right-0 h-full w-full opacity-0 transition-all ease-linear duration-200 rounded-2xl border">
+                <div class="text-black font-poppins font-medium text-lg md:text-xl flex justify-center items-center bg-cyan-300 bg-opacity-50 absolute rounded-xl h-full w-full">Gift Pack</div>
+            </div>
+            </div>
+            <div class="relative rounded-2xl border">
+            <img src="/src/assets/dry-friut.jpg" alt="" class="rounded-xl border-2 w-full" aria-describedby="Fifth-image">
+            <div class="hover:opacity-100 absolute top-0 bottom-0 left-0 right-0 h-full w-full opacity-0 transition-all ease-linear duration-200 rounded-2xl border">
+                <div class="text-black font-poppins font-medium text-lg md:text-xl flex justify-center items-center bg-cyan-300 bg-opacity-50 absolute rounded-xl h-full w-full">Dry Fruits</div>
+            </div>
+            </div>
+            <div class="relative rounded-2xl border">
+            <img src="/src/assets/snacks.jpg" alt="" class="rounded-xl border-2 w-full" aria-describedby="Sixth-image">
+            <div class="hover:opacity-100 absolute top-0 bottom-0 left-0 right-0 h-full w-full opacity-0 transition-all ease-linear duration-200 rounded-2xl border">
+                <div class="text-black font-poppins font-medium text-lg md:text-xl flex justify-center items-center bg-cyan-300 bg-opacity-50 absolute rounded-xl h-full w-full">Snacks</div>
+            </div>
+            </div>
+            <div class="relative rounded-2xl ">
+                <img src="/src/assets/circle-scatter-haikei (2).svg" alt="SVG image" class="h-full">
+            </div>
+        </div>
+    </section>
+
+    <!-- Product section end -->
+    <!-- Review section start -->
+
+    <section class="md:px-16 p-6 bg-gradient-to-r from-violet-600 to-slate-900">
+        <div class="pb-6 text-white md:text-4xl text-2xl">
+        <h1>Visitors Word For Us . . . </h1>
+        </div>
+
+        <div class="flex relative lg:w-5/6 w-auto  my-8 border-2 border-cyan-400 rounded bg-opacity-50 bg-black">
+            <div class="m-6 text-white w-auto">
+                <p class="md:text-xl text-lg font-poppins text-cyan-400 mr-20 sm:mr-auto"> Simply Irresistible! </p> 
+                <p class="text-red-500 my-2" >Rating: ★★★★☆</p>
+                <p class="text-sm md:text-lg min-[600px]:mt-auto mt-6">
+                Review:
+                I recently indulged my sweet tooth by visiting this charming sweet shop, and it was an absolute delight! From the moment I stepped inside, I was transported to a world of confectionery wonders.
+                The shop itself exuded a cozy and inviting atmosphere, with its vibrant displays and the heavenly aroma of freshly baked treats. The variety of sweets on offer was impressive, ranging from classic favorites to unique and innovative creations. It was a true paradise for sugar enthusiasts like myself.
+                </p>
+                <p class="font-mono text-end" style="font-family: cursive;"> Sarah Dayan</p>
+            </div>
+                <img src="" id="img_1">
+        </div>
+
+        <div class="flex relative lg:w-5/6 w-auto  my-8 border-2 border-cyan-400 rounded bg-opacity-50 bg-black ms-auto">
+        <img src="" id="img_2">
+            <div class="m-6 text-white w-auto ">
+                <p class="md:text-xl text-lg font-poppins text-cyan-400 mr-20 sm:mr-auto">  Delightful Treats for Every Sweet Tooth! </p> 
+                <p class="text-red-500 my-2" >Rating: ★★★★☆ </p>
+                <p class="text-sm md:text-lg min-[600px]:mt-auto mt-6">
+                Review:
+                If you're a sweet lover like me, this sweet shop is an absolute must-visit. Their website offers a glimpse into a sugary wonderland, where you can explore and indulge in an array of mouthwatering creations. Treat yourself or surprise a loved one with a box of happiness from this extraordinary sweet shop—you won't be disappointed!
+                </p>
+                <p class="font-mono text-end" style="font-family: cursive;"> Charlie Green</p>
+            </div>
+        </div>
+    
+        <div class="flex relative lg:w-5/6 w-auto  my-8 border-2 border-cyan-400 rounded bg-opacity-50 bg-black">
+            <div class="m-6 text-white w-auto">
+                <p class="md:text-xl text-lg font-poppins text-cyan-400 mr-20 sm:mr-auto">  A Sweet Paradise Beyond Imagination! </p> 
+                <p class="text-red-500 my-2" >Rating: ★★★★☆</p>
+                <p class="text-sm md:text-lg min-[600px]:mt-auto mt-6">
+                Review:
+                I stumbled upon this sweet shop and it turned out to be a hidden gem of sugary delights! From the moment I walked through the door, I was captivated by the enchanting aroma of freshly baked treats and the dazzling display of confections.
+                What truly impressed me was the exceptional quality and attention to detail. Each treat was a work of art, meticulously crafted with the finest ingredients. The flavors were exquisite, the textures were divine, and every bite was a heavenly experience.
+                </p>
+                <p class="font-mono text-end" style="font-family: cursive;">Omer Lopez</p>
+            </div>
+        <img src=""  id="img_3">
+        </div>
+    </section>
+
+    <!-- Review section end -->
+    <!-- Contact Section Start -->
+
+
+    <!-- Contact Section End -->
+    <!-- Footer Start -->
+
+    <footer class="bg-gray-900 pt-10 pb-6">
+        <hr class="my-6 border-gray-700">
+        <div class="flex flex-wrap  justify-center my-auto sm:my-4">
+            <div class="w-full lg:w-4/12 px-4 text-center mb-8">
+                <h4 class="text-3xl text-white font-semibold mb-4">Contact Us</h4>
+                <p class="text-sm mt-2 text-white">Phone: +1-555-123-4567</p>
+                <p class="text-sm mt-2 text-white">Email: info@sweetshop.com</p>
+                <p class="text-sm mt-2 text-white">Address: 60 Feeta Road, Jankipuram, Lucknow</p>
+            </div>
+            <div class="w-full lg:w-4/12 px-4 text-center mb-8">
+                <h4 class="text-3xl text-white font-semibold mb-4">Pricing</h4>
+                <p class="text-sm mt-2 text-white">Check out our pricing and specials:</p>
+                <a href="#" class="text-sm mt-2 text-pink-500">View Pricing</a>
+            </div> 
+            <div class="w-full lg:w-4/12 px-4 text-center my-auto sm:mb-4 mx-12 lg:mx-auto">
+                <h4 class="text-3xl text-white font-semibold mb-4">Map</h4>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2404.312370114992!2d80.94126757565611!3d26.926552505979366!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399957aad4fef4c3%3A0x6c509d35cedb7ee!2sVishwas%20Sweets!5e0!3m2!1sen!2sin!4v1683558773648!5m2!1sen!2sin" class="w-full border-4 border-cyan-400 rounded-xl" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>  
+            </div>
+            </div>
+            <hr class="my-6 border-gray-700">
+            <div class="flex flex-wrap items-center justify-center">
+                <div class="w-full lg:w-6/12 px-4">
+                    <div class="text-sm text-white font-semibold py-1">
+                    <a href="#" class="text-white hover:text-gray-400 mr-4">Privacy Policy</a>
+                    <a href="#" class="text-white hover:text-gray-400 mr-4">Terms of Service</a>
+                    <a href="#" class="text-white hover:text-gray-400 mr-4">Contact</a>
+                    </div>
+                </div>
+                <div class="w-full lg:w-6/12 px-4">
+                    <div class="text-sm text-white font-semibold py-1 text-right">
+                        © 2023 Vishwas Sweets. All rights reserved.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Footer End -->
+    <!-- Javascript File -->
+
+    <script src="/src/main.js"></script>
+</body>
+</html>
