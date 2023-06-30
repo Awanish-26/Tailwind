@@ -10,6 +10,8 @@
     "tailwindcss-animatecss": "^3.0.4"
   },
   "scripts": {
-    "build-css": "tailwindcss -i ./src/input.css -o ./assets/css/output.css -w"
+    "build-css": "tailwindcss -i ./src/input.css -o ./assets/css/output.css -w",
+    "tailwind": "npx tailwindcss -i ./src/input.css -o ./assets/css/output.css -w"
+  },
   }  
 }
