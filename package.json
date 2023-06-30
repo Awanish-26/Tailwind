@@ -1,4 +1,8 @@
 {
+  "name": "Tailwind-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "tailwind.config.js",
   "devDependencies": {
     "tailwindcss": "^3.3.2"
   },
@@ -6,7 +10,6 @@
     "tailwindcss-animatecss": "^3.0.4"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "tailwindcss build -i ./src/input.css -o ./dist/output.css"
+    "build-css": "tailwindcss -i ./src/input.css -o ./assets/css/output.css -w"
   }  
 }
