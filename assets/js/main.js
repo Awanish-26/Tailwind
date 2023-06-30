@@ -18,16 +18,16 @@ function replaceImage() {
 
   var newImageSrc;
   if (deviceWidth < 600) {
-    image.setAttribute('src',"/src/assets/dmitriy-nushtaev-circle.jpg");
-    image2.setAttribute('src',"/src/assets/charlie-green-circle.jpg");
-    image3.setAttribute('src',"/src/assets/omar-lopez-circle.jpg");
+    image.setAttribute('src',"/assets/images/dmitriy-nushtaev-circle.jpg");
+    image2.setAttribute('src',"/assets/images/charlie-green-circle.jpg");
+    image3.setAttribute('src',"/assets/images/omar-lopez-circle.jpg");
     image.setAttribute('class','absolute top-2 right-2 w-24 h-24 rounded-full')
     image2.setAttribute('class','absolute top-2 right-2 w-24 h-24 rounded-full')
     image3.setAttribute('class','absolute top-2 right-2 w-24 h-24 rounded-full')
   } else {
-    image.setAttribute ('src','/src/assets/dmitriy-nushtaev-tyv3bhizAx8-unsplash(1).jpg');
-    image2.setAttribute ('src','/src/assets/charlie-green-3JmfENcL24M-unsplash.jpg');
-    image3.setAttribute ('src','/src/assets/omar-lopez-Gx5-zf_HE9w-unsplash.jpg');
+    image.setAttribute ('src','/assets/images/dmitriy-nushtaev-tyv3bhizAx8-unsplash(1).jpg');
+    image2.setAttribute ('src','/assets/images/charlie-green-3JmfENcL24M-unsplash.jpg');
+    image3.setAttribute ('src','/assets/images/omar-lopez-Gx5-zf_HE9w-unsplash.jpg');
     image.setAttribute('class','w-40 sm:w-60')
     image2.setAttribute('class','w-40 sm:w-60')
     image3.setAttribute('class','w-40 sm:w-60')
