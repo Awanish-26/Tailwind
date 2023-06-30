@@ -12,6 +12,5 @@
   "scripts": {
     "build-css": "tailwindcss -i ./src/input.css -o ./assets/css/output.css -w",
     "tailwind": "npx tailwindcss -i ./src/input.css -o ./assets/css/output.css -w"
-  },
   }  
 }
