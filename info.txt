@@ -1,20 +1,5 @@
-Sure, here are some possible sections that you could include on your sweet shop website:
-
-1. Products: This section would showcase your different types of sweets, candies, chocolates, and baked goods that you offer. You could organize them by categories such as "chocolates," "gummies," "candies," and "baked goods." You could also include a short description of each item and high-quality photos to entice customers.
-
-2. About Us: This section would provide information about your sweet shop, including your history, values, and mission. You could also include information about your team, such as the founders or the head chef, to add a personal touch.
-
-3. Reviews/Testimonials: This section would showcase customer reviews or testimonials, which can be a powerful marketing tool. You could include quotes from satisfied customers or link to review sites like Yelp or Google Reviews.
-
-4. Special Offers: This section would highlight any current deals or promotions that you are running, such as discounts or seasonal specials. You could also use this section to promote any new products that you are offering.
-
-5. Contact Us: This section would provide customers with a way to get in touch with you, such as an email address, phone number, or contact form. You could also include your hours of operation and address, if you have a physical storefront.
-
-6. FAQ: This section would answer frequently asked questions that customers may have about your products or services. This could include information about shipping, returns, or allergens in your products.
-
-
 To start tailwind postprocessor-----
-npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch
+npx tailwindcss -i ./src/input.css -o ./assets/css/output.css -w
 
 To deploy your static Tailwind project on GitHub Pages, follow these steps:
 
