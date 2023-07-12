@@ -18,11 +18,11 @@
 <body class="bg-gradient-to-r from-violet-900 to-slate-700">
 
     <!-- Navigation bar start-->
-    <nav class="nav bg-gradient-to-r from-violet-900 to-slate-700 align-middle py-2 md:px-16 px-10 sm:block md:flex sticky w-100 left-0 top-0 z-10">
-        <div class="text-green-400 flex md:block justify-between">
+    <nav class="nav bg-gradient-to-r from-violet-900 to-slate-700 py-2 md:px-16 px-10 sm:block md:flex sticky w-100 left-0 top-0 z-10">
+        <div class="text-green-400 flex md:block justify-between items-center">
             <h1 class="md:text-4xl text-3xl font-bold italic"><a href="#">Vishwas Sweets</a> </h1>
-            <button class="md:hidden visible text-white text-3xl hover:scale-110 hover:text-emerald-400" id="show-btn">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+            <button class="md:hidden visible text-white text-3xl hover:scale-110 hover:text-emerald-400" id="show-btn" aria-label="button">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6" aria-label="svg">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
                 </svg>
             </button>
@@ -64,7 +64,7 @@
             </p>
         </div>
         <div class="md:float-right">
-            <img src="assets/images/cover-removebg-preview.png">
+            <img src="assets/images/cover-removebg-preview.png" alt="image of sweets">
             <p class="md:text-4xl text-2xl mb-4 text-teal-200 text-center font-playball" >"you are what you eat , so eat sweet "</p>
         </div>
     </div>
@@ -172,12 +172,38 @@
     <!-- Review section end -->
     <!-- Contact Section Start -->
 
+    <div class="px-4 sm:px-12 py-6">
+        <h1 class="text-white text-4xl text-center my-4">Connect With Us</h1>
+        <hr class="bg-gray-600">
+        <form action="" class="my-4 md:my-8 font-sans sm:flex justify-between">
+            <div class="left md:w-1/2 px-2 md:px-8">
+                <div class="name text-base md:text-2xl mb-8">
+                    <label for="name" class="text-base md:text-2xl text-white block mb-2">Name</label>
+                    <input type="text" name="name" id="name" placeholder="Enter your name" maxlength="100" class="text-white bg-inherit bg-white bg-opacity-25 text-base outline-none rounded-md md:rounded-3xl px-2 sm:px-8 py-4 w-full caret-white">
+                </div>
+                <div class="email text-base md:text-2xl mb-8">
+                    <label for="email" class="text-base md:text-2xl text-white block mb-2">Email</label>
+                    <input type="email" name="email" id="email" placeholder="Enter your email" class="text-white bg-inherit bg-white bg-opacity-25 text-base outline-none rounded-md md:rounded-3xl px-2 sm:px-8 py-4 w-full caret-white">
+                </div>
+            </div>
+            <div class="right md:w-1/2 px-2 md:px-8">
+                <div class="textarea text-base md:text-2xl mb-4 basis-1/2">
+                    <label for="text" class="text-base md:text-2xl text-white block mb-2">Message</label>
+                    <textarea name="text" id="text" placeholder="Send a message" cols="30" rows="6" class="text-white bg-inherit bg-white bg-opacity-25 text-base rounded-md md:rounded-3xl px-2 sm:px-4 py-4 w-full outline-none caret-white"></textarea>
+                </div>
+                <div class="btn text-base md:text-2xl mb-4 basis-1/2">
+                    <button type="submit" class="text-base md:text-2xl bg-cyan-500 text-white py-2 w-full rounded-full ">Submit</button>
+                </div>
+            </div>
+            
+        </form>
+    </div>
 
     <!-- Contact Section End -->
     <!-- Footer Start -->
 
     <footer class="bg-gray-900 pt-10 pb-6">
-        <hr class="my-6 border-gray-700">
+        <hr class="border-gray-700">
         <div class="flex flex-wrap  justify-center my-auto sm:my-4">
             <div class="w-full lg:w-4/12 px-4 text-center mb-8">
                 <h4 class="text-3xl text-white font-semibold mb-4">Contact Us</h4>
